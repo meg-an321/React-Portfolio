@@ -9,7 +9,6 @@ import Error from './pages/Error';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
-// import Blog from './pages/Blog';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -26,10 +25,6 @@ const router = createBrowserRouter([
         path: '/About',
         element: <About />,
       },
-      // {
-      //   path: '/Blog',
-      //   element: <Blog />,
-      // },
       {
         path: '/Contact',
         element: <Contact />,
@@ -41,20 +36,3 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
-
-
-
-
-
-
-
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import App from './App.jsx'
-// import './index.css'
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// )

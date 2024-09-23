@@ -1,21 +1,37 @@
+import React from "react";
+import myGif from "../assets/blu.gif";
+
+
 export default function Contact() {
     return (
-      <div>
+      <div style={{ 
+        backgroundImage: `url(${myGif})`, 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        height: '100vh', // Full height of the viewport
+        color: 'white', // Change text color for better visibility
+        display: 'flex', 
+        flexDirection: 'column', 
+        justifyContent: 'center', 
+        alignItems: 'center'
+      }}> 
+      
         <h1>Contact Page</h1>
         <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-          molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-          magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-          efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-          mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-          faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-          ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-          dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
+          This is the contact page. 
+          You can reach me at <a href="mailto: [email protected]"> [email protected]</a>.
+          
         </p>
+        <div>
+        <a href= "mailto: [email protected]">
+          <img src="/src/assets/mail.png" alt="Mail Logo" style={{ width: '50px', height: '50px', marginRight: '20px' }} />
+         
+        </a>
+        <a href="https://github.com/meg-an321">
+          <img src="/src/assets/github2.png" alt="GitHub Logo" style={{ width: '90px', height: '50px' }} />
+        </a>
       </div>
+    </div>
     );
   }
-  
+   

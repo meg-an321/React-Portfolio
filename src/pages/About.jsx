@@ -1,14 +1,25 @@
+import React from "react";
+import myGif from "../assets/giphy.gif";
+
 export default function About() {
   return (
-    <div>
+    <div style={{ 
+      backgroundImage: `url(${myGif})`, 
+      backgroundSize: 'cover', 
+      backgroundPosition: 'center', 
+      height: '100vh', // Full height of the viewport
+      color: 'white', // Change text color for better visibility
+      display: 'flex', 
+      flexDirection: 'column', 
+      justifyContent: 'center', 
+      alignItems: 'center'
+    }}>
+    
       <h1>About Page</h1>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+       Hello, my name is Megan. I am a junior full stack web developer with experience in HTML, CSS, JavaScript, Node.js, Express.js, MySQL, and React.
+       I took a few courses last year during Covid-19 for fun and found that I really enjoyed coding. I am currently enrolled in a coding bootcamp to further my skills.
+        I am excited to see where this journey takes me.
       </p>
     </div>
   );
