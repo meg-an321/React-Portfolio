@@ -71,3 +71,26 @@ p {
   }
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #root {
+    padding: 0.5rem; /* Further reduce padding */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  p {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .logo {
+    height: 3em; /* Further adjust logo size */
+  }
+
+  .nav {
+    padding: 0.5em; /* Further reduce padding */
+  }
+}
+
