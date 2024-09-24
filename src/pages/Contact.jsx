@@ -19,7 +19,7 @@ export default function Contact() {
         <h1>Contact Page</h1>
         <p>
           This is the contact page. 
-          You can reach me at <a href="mailto: [email protected]"> [email protected]</a>.
+          You can reach me by either email or GitHub.
           
         </p>
         <div>
